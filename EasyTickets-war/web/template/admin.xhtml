@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title><ui:insert name="title">Admin CP</ui:insert></title>
+        <h:outputStylesheet library="admin-resources/components/bootstrap/dist/css" name="bootstrap.min.css"/>
+        <h:outputStylesheet library="admin-resources/components/metisMenu/dist" name="metisMenu.min.css"/>
+        <h:outputStylesheet library="admin-resources/dist/css" name="sb-admin-2.css"/>
+        <h:outputStylesheet library="admin-resources/components/morrisjs" name="morris.css"/>
+        <h:outputStylesheet library="admin-resources/components/font-awesome/css" name="font-awesome.min.css"/>
+        
+        <h:outputScript library="admin-resources/components/jquery/dist" name="jquery.min.js"/>
+        <h:outputScript library="admin-resources/components/bootstrap/dist/js" name="bootstrap.min.js"/>
+        <h:outputScript library="admin-resources/components/metisMenu/dist" name="metisMenu.min.js"/>
+    </h:head>
+
+    <h:body>
+        <div id="wrapper">
+
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.jsp"><b>ET</b> Admin</a>
+                </div>
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i> Account name <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="admin-setting.jsp"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.jsp"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="customer-manage.jsp"><i class="fa fa-users fa-fw"></i> Manage Customer</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-ticket fa-fw"></i> Manage Program <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="program-manage.jsp">List Program</a>
+                                    </li>
+                                    <li>
+                                        <a href="program-manage-category.jsp">Program Category</a>
+                                    </li>
+                                    <li>
+                                        <a href="program-manage-type.jsp">Program Type</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-building fa-fw"></i> Manage City</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-gift fa-fw"></i> Manage Event<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="event-manage.jsp">List Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="event-manage-type.jsp">Event Type</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-question-circle fa-fw"></i> Manage Survey<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="event-manage.jsp">List Multiple-choice</a>
+                                    </li>
+                                    <li>
+                                        <a href="event-manage-type.jsp">----</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-rss-square fa-fw"></i> Manage News<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="news-manage.jsp">List News</a>
+                                    </li>
+                                    <li>
+                                        <a href="news-manage.jsp">List News by Customer</a>
+                                    </li>
+                                    <li>
+                                        <a href="news-manage-type.jsp">News Type</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-support fa-fw"></i> Customer Support<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">View Feedback</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Send Notice to Customer</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="glyphicon glyphicon-stats"></i> Statics<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">News Stats</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tickets Stats</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Events Stats</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="page-wrapper"><ui:insert name="content">Content</ui:insert></div>
+        </div>
+
+    </h:body>
+
+        <h:outputScript library="admin-resources/dist/js" name="sb-admin-2.js"/>
+        <h:outputScript library="admin-resources/js" name="all.js"/>
+</html>

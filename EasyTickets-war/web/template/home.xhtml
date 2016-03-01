@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <h:outputStylesheet library="boostrap/css" name="bootstrap-theme.min.css"/>
+        <h:outputStylesheet library="boostrap/css" name="bootstrap.css"/>
+        <h:outputStylesheet library="admin-resources/components/font-awesome/css" name="font-awesome.min.css"/>
+        <h:outputStylesheet library="css" name="style.css"/>
+        <h:outputScript library="boostrap/js" name="ie-emulation-modes-warning.js"/>
+        <h:outputScript library="boostrap/js" name="jquery.min.js"/>
+        <title><ui:insert name="title">#{msg['title.default']}</ui:insert></title>
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><h:graphicImage library="images" name="logo.png" height="50"/></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Music</a></li>
+                        <li><a href="#about">Movie</a></li>
+                        <li><a href="#about">Drama</a></li>
+                        <li><a href="#about">Sport</a></li>
+                        <li><a href="#about">News</a></li>
+                        <li><a href="#contact">Events</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#loginForm"><i class="glyphicon glyphicon-user"></i> Member</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container main-page">
+            <ui:insert name="content">Content</ui:insert>
+        </div>
+        <!--Model Login or Register-->
+        <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="glyphicon glyphicon-remove-sign"></i></span></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-user"></i> Member Action</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Don't have account</h4>
+                                <a href="#" class="btn btn-success btn-block"><i class="fa fa-plus-circle"></i> Sign Up</a>
+                            </div>
+                            <div class="col-md-6" style="border-left: 1px solid #bbb">
+                                <h4>Are you member</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+                                            <input type="text" class="form-control" placeholder="Email"/>      
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                            <input type="password" class="form-control" placeholder="Password"/>      
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-log-in"></i> Login</button>
+                                    <a href="#" class="pull-right">Forgot password ?</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Model Login or Register-->
+        <footer>
+            <div class="innerFooter container">
+                <div class="footerContBot">
+                    <div class="col-md-3">
+                        <h5>EASYTICKET</h5>
+                        <ul class="listFooter">
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Guide</a></li>
+                            <li><a href="#">Recruiment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>REGULATION</h5>
+                        <ul class="listFooter">
+                            <li><a href="#terms">Terms</a></li>
+                            <li><a href="#">Community Rules</a></li>
+                            <li><a href="#">Copyright Complaints</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">RSS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>CONNECT</h5>
+                        <ul class="listFooter">
+                            <li><a href="#about">Example links 1</a></li>
+                            <li><a href="#about">Example links 2</a></li>
+                            <li><a href="#about">Example links 3</a></li>
+                            <li><a href="#about">Example links 4</a></li>
+                            <li><a href="#about">Example links 5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3" align="center">
+                        <ul class="socialFooter">
+                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="innerFooter container">
+                <div class="footerContBot">
+                    <h:graphicImage library="images" name="footer-logo.png" class="imgLogoFooter" height="140"/>
+                    <div class="footerDetail">
+                        <h4><i class="glyphicon glyphicon-pushpin"></i> Project: EasyTicket.Com - [ACE-CANTHO-1] - i10</h4>
+                        <i class="glyphicon glyphicon-user"></i> Member
+                        <ol>
+                            <li>NHAN CHAU THAI</li>
+                            <li>TRONG NGUYEN THANH</li>
+                            <li>DIEM VO THI NGOC</li>
+                            <li>NHAN NGUYEN LE HOANG</li>
+                        </ol>
+                        <i class="glyphicon glyphicon-map-marker"></i> Address: 01 Ly Tu Trong Street, Ninh Kieu District, Can Tho City
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </h:body>
+
+    <h:outputScript library="boostrap/js" name="bootstrap.min.js"/>
+    <h:outputScript library="js" name="ETApp.js"/>
+</html>

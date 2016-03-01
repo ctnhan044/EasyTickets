@@ -1,0 +1,295 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(UyBMtLsHKBKXelqf4x7VRQ.woff2?ln=css/fonts) format('woff2');
+    /*unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;*/
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(1YwB1sO8YE1Lyjf12WNiUA.woff2?ln=css/fonts) format('woff2');
+    /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;*/
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2?ln=css/fonts) format('woff2');
+    /*unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;*/
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(H2DMvhDLycM56KNuAtbJYA.woff2?ln=css/fonts) format('woff2');
+    /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;*/
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #fff url('pattern3.png?ln=css/img');
+}
+a {
+    color: #23527c
+}
+
+a:hover {
+    color: #2582be;
+    text-decoration: none;
+    transition: all 100ms;
+}
+.navbar-default .navbar-nav > li > a {
+    transition: all 200ms;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    margin-top: -3px;
+    text-decoration: none;
+    color: #4374b9;
+}
+.navbar-brand {
+    padding: 0 15px;
+}
+.navbar {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f79320;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('pattern4.png?ln=css/img');
+}
+.main-page {
+    margin-top: 55px;
+    background: #fff url('pattern3.png?ln=css/img');
+}
+
+/* --- List program ---*/
+.box
+{
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box:after
+{
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+}
+
+.box h3 {
+    color: #212121;
+    text-transform: uppercase;
+    display: block;
+    width: auto;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 10px 15px;
+}
+.thumb_zoom {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0px !important;
+    transition: all 200ms;
+}
+
+
+.thumb_zoom
+{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#program .program-img {
+    height: 250px;
+}
+
+#program:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    /* Safari and Chrome */
+
+    -moz-transform: scale(1.1, 1.1);
+    /* Firefox */
+
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+
+    -o-transform: scale(1.1, 1.1);
+    /* Opera */
+
+    transform: scale(1.1, 1.1);
+    transition: all 200ms;
+    z-index: 99;
+}
+
+#program .programTitle {
+    margin: 0 15px 5px 15px;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 0 5px 0 5px;
+}
+#program .programTitle h4 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ---- List Topics ----- */
+#topics {
+    margin-bottom: 20px;
+}
+#topics img {
+    width: 100px;
+    height: 100px;
+}
+#topics a {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+}
+.prefix {
+    font-size: 12px;
+    padding: 3px 10px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.prefix.blue {
+    background-color: #3A87AD;
+}
+.prefix.yellow {
+    background-color: #F89406
+}
+.prefix.red {
+    background-color: #CD0000
+}
+.prefix.green {
+    background-color: #093
+}
+
+/* ----- Footer ----- */
+footer {
+    background: #363636;
+}
+.innerFooter {
+    margin: 0 auto;
+    overflow: hidden;
+    color: #808080;
+}
+.footerContBot {
+    overflow: hidden;
+    border-top: 1px solid #4A4A4A;
+    margin-bottom: 20px;
+    padding: 20px 0 0;
+}
+.footerContBot .imgLogoFooter {
+    margin-right: 20px;
+    float: left;
+}
+.footerContBot .footerDetail {
+    float: left;
+    color: #999;
+}
+.footerContBot .footerDetail h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+.footerContBot h5 {
+    font-weight: bold;
+    color: #b0b0b0;
+}
+
+ul.listFooter {
+    list-style: disc;
+}
+ul.listFooter li {
+    margin-left: -10px;
+}
+ul.listFooter a {
+    color: #c0c0c0;
+}
+ul.listFooter a:hover {
+    color: #e0e0e0;
+}
+
+ul.socialFooter { 
+    list-style: none;
+    margin-left: -20px;
+}
+ul.socialFooter li {
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    background: #d0d0d0;
+    font-size: 20px;
+}
+
+ul.socialFooter li.facebook a{
+    color: #3b5998
+}
+ul.socialFooter li.twitter a{
+    color: #00a0d1
+}
+ul.socialFooter li.google a{
+    color: #db4a39
+}
+ul.socialFooter li.youtube a{
+    color: #c8232c
+}
+ul.socialFooter li:hover a {
+    color: #fff;
+}
+.socialFooter li:hover {
+    transition: all .5s;
+    border-radius: 5px;
+}
+ul.socialFooter li.facebook:hover {
+    background: #3b5998
+}ul.socialFooter li.twitter:hover {
+    background: #00a0d1
+}ul.socialFooter li.google:hover {
+    background: #db4a39
+}ul.socialFooter li.youtube:hover {
+    background: #c8232c
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: #ebebeb;
+    border: 1px solid #ccc
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #f79320;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #f79320;
+}
